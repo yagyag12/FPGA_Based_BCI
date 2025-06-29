@@ -1,0 +1,12 @@
+network = trainedNetwork_2;
+save("ann_network.mat", "network");
+
+%%
+load("ann_network.mat");
+load("ann_features.mat");
+net = trainedNetwork_2;
+prediction_vector = classify(net, feature_matrix);
+label_vector_categorical = categorical(label_vector); 
+accuracy = sum(prediction_vector == label_vector_categorical) / numel(label_vector) * 100;
+fprintf('Classification Accuracy: %.2f%%\n', accuracy);
+

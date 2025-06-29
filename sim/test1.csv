@@ -1,0 +1,32 @@
+Session: untitled,,,,,,,
+Training Data: featureTable    Observations: 10308,,,,,,,
+"Predictors: 14    Predictor Names: Gamma, Beta, Alpha, Theta, Delta, ZeroCross, DWT Alpha Var , DWT Alpha STD , DWT Beta Var , DWT Beta STD , DWT Theta Var , DWT Theta STD , DWT Delta Var , DWT Delta STD ",,,,,,,
+"Response Name: Label    Response Classes: 2    Response Class Names: 0, 1",,,,,,,
+Validation: 5-fold cross-validation,,,,,,,
+Test Data: featureTable    Observations: 4417,,,,,,,
+,,,,,,,
+,,,,,,,
+Favorite,Model Number,Model Type,Status,Accuracy % (Validation),Total Cost (Validation),Accuracy % (Test),Total Cost (Test)
+0,1,Tree,Tested,90.5025223127668,979,90.0384876613086,440
+0,2.1,SVM,Canceled,NaN,NaN,NaN,NaN
+0,2.2,SVM,Canceled,NaN,NaN,NaN,NaN
+0,2.3,SVM,Canceled,NaN,NaN,NaN,NaN
+0,2.4,SVM,Tested,72.3127667830811,2854,73.4661534978492,1172
+0,2.5,SVM,Tested,68.7621265036865,3220,69.5494679646819,1345
+0,2.6,SVM,Tested,66.2010089251067,3484,66.5383744623047,1478
+0,3.1,KNN,Tested,97.3321691889794,275,98.3699343445778,72
+0,3.2,KNN,Tested,89.871944121071,1044,91.8496717228888,360
+0,3.3,KNN,Tested,75.3880481179666,2537,77.8356350464116,979
+0,3.4,KNN,Tested,89.9495537446643,1036,91.4421553090333,378
+0,3.5,KNN,Tested,88.3294528521537,1203,90.7629612859407,408
+0,3.6,KNN,Tested,96.0613116026387,406,97.1247453022414,127
+0,4.1,Ensemble,Tested,84.5556849049282,1592,86.4387593389178,599
+0,4.2,Ensemble,Tested,99.0298797050834,100,99.6377631876839,16
+0,4.3,Ensemble,Tested,66.1719053162592,3487,67.0364500792393,1456
+0,4.4,Ensemble,Tested,88.0966239813737,1227,88.7027394158931,499
+0,4.5,Ensemble,Tested,77.8424524641055,2284,80.7561693457098,850
+0,5.1,Neural Network,Tested,78.046177726038,2263,80.3260131310845,869
+0,5.2,Neural Network,Tested,83.8183934807916,1668,84.7860538827258,672
+0,5.3,Neural Network,Tested,89.0279394644936,1131,88.2273035997283,520
+0,5.4,Neural Network,Tested,81.1893674815677,1939,83.9936608557845,707
+0,5.5,Neural Network,Tested,82.8870779976717,1764,85.6010867104369,636
