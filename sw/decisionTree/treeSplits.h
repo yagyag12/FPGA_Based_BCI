@@ -1,12 +1,9 @@
-//
-// Created by user on 20.03.2025.
-//
+// Tree Struct and Node Parameters
 
 #ifndef TREESPLITS_H
 #define TREESPLITS_H
 
-
-
+// Tree Node Struct
 typedef struct {
     int feature_index;
     double threshold;
@@ -15,6 +12,7 @@ typedef struct {
     int class_label;
 } TreeNode;
 
+// Node Parameters
 TreeNode tree[] = {
     {5, 145984464.500000, 1, 2, -1},
     {6, 43.500000, 3, 4, -1},

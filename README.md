@@ -27,4 +27,8 @@ In the presented graduation project, binary classification of EEG (Electroenceph
 - **EEGLive.mlx** file is a Matlab Live Script, simulating the preprocessing and feature extraction steps of the project.
 - **dwtsim.slx** is a Simulink simulation for Discrete Wavelet Transform decomposition.
 - **ann_network.mat** file contains a Matlab Deep Network Designer Artifical Neural Network for eye state classification. **ann_data_prep.m** is used for creating labeled inputs for the network. This approach is later discarded in the Project because of the difficulties in the hardware implementation.
+- **/sw** folder contains embedded implementations of SVM and Decision Tree algorithms in C.
+
+## Detailed Information
+The thesis is included at **/reports/fpga_based_bci_report** written in Turkish. However, a comprehensive English summary is provided at the end of the document for international accessibility and reference purposes.
 

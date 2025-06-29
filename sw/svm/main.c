@@ -1,15 +1,25 @@
+/************************************************************/
+//      S U P P O R T   V E C T O R   M A C H I N E         //
+//                                                          //
+//  Desc: Eye state classification with a pretrained SVM    //
+//                                                          //
+/************************************************************/
+
+/***********************  INCLUDES  *************************/
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <math.h>
-#include "param.h"  // This should contain: mySVM_SVs, mySVM_alpha, mySVM_bias, mySVM_gamma
+#include "param.h" 
 #include "inputs_data.h"
 
-#define N_FEATURES 27
-#define N_SV 8477   // Replace with your actual number of support vectors
-#define N_INPUTS 9745 // Replace with number of test inputs
+/***********************  CONSTANTS  ************************/
 
-// Example input features (replace with real data)
+#define N_FEATURES 27   // No of input features
+#define N_SV 8477       // No of support vector
+#define N_INPUTS 9745   // No of inputs
 
+/***********************  FUNCTIONS  ************************/
 // RBF Kernel function
 double rbf_kernel(const double *x, const double *sv) {
     double sum_sq = 0.0;
@@ -31,7 +41,8 @@ int predict_svm(const double *x) {
     return (score >= 0.0) ? 1 : 0;
 }
 
-// Main routine to classify each input
+/*************************  MAIN  ***************************/
+
 int main() {
     FILE *out = fopen("output.txt", "w");
     if (!out) {

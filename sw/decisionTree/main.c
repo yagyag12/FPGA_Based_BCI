@@ -1,12 +1,25 @@
+/************************************************************/
+//                D E C I S I O N   T R E E                 //
+//                                                          //
+//  Desc: Eye state classification with a Binary Decision   //
+//  Tree                                                    //
+//                                                          //
+/************************************************************/
+
+/***********************  INCLUDES  *************************/
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
 #include "treeSplits.h"
 
+/***********************  CONSTANTS  ************************/
+
 #define MAX_FEATURES 27
 #define LINE_LENGTH 256
 
-
+/***********************  FUNCTIONS  ************************/
+// Output Classification function
 int classify(const double *features) {
     int node = 0;
     while (tree[node].left != -1 && tree[node].right != -1) {
@@ -19,7 +32,7 @@ int classify(const double *features) {
     return tree[node].class_label;
 }
 
-
+// Parse Features function
 void parse_features(FILE *in, FILE *out) {
     char line[LINE_LENGTH];
     double features[MAX_FEATURES];
@@ -57,8 +70,10 @@ void parse_features(FILE *in, FILE *out) {
     }
 }
 
+/*************************  MAIN  ***************************/
+
 int main() {
-    FILE *in = fopen("C:\\Users\\user\\CLionProjects\\decisionTreeImp\\out_features_processed.txt", "r");
+    FILE *in = fopen("out_features_processed.txt", "r"); // NOTE: Directory must be updated.
     FILE *out = fopen("output.txt", "w");
     if (!in || !out) {
         perror("File error");
