@@ -1,5 +1,5 @@
-# EEG_Eye_State_Classification
-FPGA Based EEG Eye State Classification with Machine Learning for Brain-Computer Interface Implementation
+# FPGA-Based Brain Computer Interface: EEG Eye State Classification with Machine Learning 
+FPGA-Based EEG Eye State Classification with Machine Learning for Brain-Computer Interface Implementation
 
 ## Overview
 In the presented graduation project, binary classification of EEG (Electroencephalography) signals was performed using an FPGA (Field Programmable Gate Array)-based embedded system, utilizing various machine learning algorithms. The example application scenario considered in this study is determining whether an individual’s eyes are open or closed. However, the developed system is designed to be adaptable to many other EEG classification problems as well, including seizure detection and motor imagery. The prioritized metrics during the development were real-time performance, low latency and resource efficiency.
